@@ -1,0 +1,151 @@
+﻿body {
+}
+
+div.slide-up {
+    height: 100%;
+    overflow: hidden;
+}
+
+    div.slide-up div.inner {
+     
+    }
+
+        div.slide-up div.inner img {
+            animation: slide-up 2s;
+            margin-left: 40%;
+            margin-top: 50%;
+            transform: scale(2);
+        }
+
+@keyframes slide-up {
+
+    0% {
+        margin-left: 40%;
+        margin-top: 150%;
+        transform: none;
+    }
+
+    25% {
+        transform: none;
+    }
+
+    50% {
+        margin-left: 40%;
+        margin-top: 50%;
+        transform: none;
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+
+/*@keyframes slide-up {
+    from {
+
+        margin-left: 40%;
+        margin-top: 150%;
+    }
+
+    to {
+
+        margin-left: 40%;
+        margin-top: 50%;
+    }
+
+
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
+    }
+
+
+
+
+}*/
+
+
+
+@media (max-width: 992px) {
+    div.slide-up {
+        height: 100%;
+        overflow: hidden;
+    }
+
+        div.slide-up div.inner {
+   
+        }
+
+            div.slide-up div.inner img {
+                animation: slide-up 2s;
+                margin-left: 40%;
+                margin-top: 50%;
+                transform: scale(2);
+              
+            }
+
+
+    @keyframes slide-up {
+
+        0% {
+            margin-left: 40%;
+            margin-top: 150%;
+            transform: none;
+        }
+
+        25% {
+            transform: none;
+        }
+
+        50% {
+            margin-left: 40%;
+            margin-top: 10%;         
+        
+        }
+        80% {
+            transform: scale(2);
+            transform: rotate(0deg);
+        }
+
+
+        100% {
+      
+            transform: rotate(360deg) scale(2);
+        }
+    }
+
+
+
+    /*@keyframes slide-up {
+        from {
+            margin-left: 40%;
+            margin-top: 150%;
+        }
+
+        to {
+            margin-left: 40%;
+            margin-top: 50%;
+        }
+    }
+
+    @keyframes grow {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(2);
+        }
+    }*/
+
+}
+
+
