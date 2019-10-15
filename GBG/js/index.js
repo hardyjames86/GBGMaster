@@ -2,11 +2,11 @@ console.clear();
 
 var MAX_LIFE = 50;
 var canvas = document.querySelector('canvas');
-var input = document.querySelector('input');
+var input = document.querySelector('#userName');
 var field = {}
 var hasFocus = false;
 var caret = document.createElement('span');
-caret.style.position = 'absolute';
+caret.style.position = 'relative';
 caret.style.left = 0;
 caret.style.top = 0;
 caret.style.margin = 0;

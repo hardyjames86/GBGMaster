@@ -17,6 +17,26 @@ div.slide-up {
             transform: scale(2);
         }
 
+
+#section2.active #imgSword {
+    animation: swordSlide 2s;
+    margin-left: 40%;
+    margin-top: 50%;
+            transform: scale(2);
+     
+}
+
+#section3.active #imgSword {
+    animation: swordSlide 2s;
+    margin-left: 40%;
+    margin-top: 50%;
+    transform: scale(2);
+
+}
+
+
+
+
 @keyframes slide-up {
 
     0% {
@@ -39,6 +59,33 @@ div.slide-up {
         transform: scale(2);
     }
 }
+
+
+@keyframes swordSlide {
+
+    0% {
+        margin-left: 40%;
+        margin-top: 150%;
+        transform: none;
+      
+    }
+
+    25% {
+        transform: none;
+       
+    }
+
+    50% {
+        margin-left: 40%;
+        margin-top: 50%;
+        transform: none;
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
 
 
 

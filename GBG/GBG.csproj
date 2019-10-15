@@ -145,6 +145,7 @@
     <Content Include="scripts\easings.min.js.map" />
     <Content Include="scripts\fullpage.min.js.map" />
     <Content Include="scripts\scrolloverflow.min.js.map" />
+    <Content Include="packages.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
