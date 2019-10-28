@@ -1,261 +1,134 @@
-﻿<!DOCTYPE html>
-<html style="width:100%;height:100%;">
+﻿<!doctype html>
+<html class="no-js" lang="">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fullpage.js</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="/css/sliderstyle.css" rel="stylesheet" />
-    <link href="/css/animation.css" rel="stylesheet" />
-    <link href="/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fullpage.css">
+    <link rel="stylesheet" href="/css/fullpagecssoverride.css">
+    <link href="css/animation.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="header" style="background:#F8F8FB;">
+        <nav class="main-nav">
+            <ul>
+                <li data-menuanchor="firstSection">
+                    <a href="#firstSection">Start</a>
+                </li>
+                <li data-menuanchor="secondSection">
+                    <a href="#secondSection">Kingdom/Merchant Select</a>
+                </li>
+                <li data-menuanchor="thirdSection">
+                    <a href="#thirdSection">Spinning Wheel Scene</a>
+                </li>
+                <li data-menuanchor="Back">
+                    <a href="#fourthSection">Challenge Select</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    <div id="slides" class="slideshow-container" style="height:100%;background:/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a7cfdf+0,23538a+100;Blue+3d+%238 */
-background: #a7cfdf; /* Old browsers */
-background: -moz-linear-gradient(top,  #a7cfdf 0%, #23538a 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #a7cfdf 0%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #a7cfdf 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */">
-
-        <div class="mySlides fade" style="height:100%;width:100%;">
-            <div id="slideContents" style="height:100%;width:100%;" >
+    <div id="fullpage">
+        <div id="section1" class="section" style="background:url('/images/start/startBackground.svg') no-repeat; background-size:cover;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container" id="startBranding" style="padding :40px;">
+                        <span style="font-family:Gesta; font-size:56px;color:#AE1D46;">GBG</span><span style="font-family:Gesta; font-size:36px;color:black;">presents</span>
+                        <br />
+                        <span style="font-family:Gesta; font-weight:600; font-size:86px;color:black;">The Sword</span>
+                        <br />
+                        <span style="font-family:Gesta; font-weight:600; font-size:86px;color:#AE1D46;line-height:0.2em;">
+                            &   <span style="font-family:Gesta; font-weight:600; font-size:86px;color:black;">The Shield</span>
+                        </span>
+                        <a href="#secondSection" class="btn btnRed" id="btnBegin">Begin</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="startBranding" style="width:200px;position:absolute;z-index:2;">
+                        <img src="images/start/startSword.svg" />
+                    </div>
+                    <div id="startShield" style="width:200px;position:absolute;">
+                        <img src="images/start/startShield.svg" />
+                    </div>
+                    <div id="startLogo" style="width:200px;position:absolute;bottom:0;right:0;">
+                        <img src="images/start/startGbgLogo.svg" />
+                    </div>
+                </div>
             </div>
-            <button id="btnStart" class="text btn btn-primary">Start</button>
         </div>
+        <div id="section2" class="section" >
 
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <h1>Please select your kingdon</h1>
+                        <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active text-center p-4">
+                                    <p><strong>Retailia</strong></p>
+                                </div>
+                                <div class="carousel-item text-center p-4">
+                                    <p><strong> & Dumfries</strong></p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="divLowerKingdom" class="col-lg-6">
+               
+                    <div id="startLogo" style="width:200px;position:absolute;bottom:0;right:0;">                  
+                        <img src="images/start/kingdomMerchantCastleBlack.svg" />
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div id="section3" class="section" style="background:green;">
+            <div>
+                <h1>asdasdad</h1>
+                <h1>Please select your kingdon</h1>
+                <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active text-center p-4">
+                            <p><strong>Retailia</strong></p>
+                        </div>
+                        <div class="carousel-item text-center p-4">
 
-        <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+                            <p><strong> & Dumfries</strong></p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="section">      
+        </div> 
 
     </div>
-    <br>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></Script>
+    <script src="/scripts/fullpage.js"></script>
+    <script src="/scripts/index.js"></script>
     <script>
-
-        function init() {
-            // initialisation stuff here
-
-
-            document.getElementById("btnStart").addEventListener("click", function () {
-
-                var xhr = new XMLHttpRequest();
-                xhr.open('GET', 'slide1.html', true);
-                xhr.onreadystatechange = function () {
-                    if (this.readyState !== 4) return;
-                    if (this.status !== 200) return; // or whatever error handling you want
-                    document.getElementById('slides').innerHTML = this.responseText;
-
-                };
-                xhr.send();   
-            });
-
-
-        }
-
-       
-
-
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'slideIntro.html', true);
-        xhr.onreadystatechange = function () {
-            if (this.readyState !== 4) return;
-            if (this.status !== 200) return; // or whatever error handling you want
-            document.getElementById('slideContents').innerHTML = this.responseText;
-        };
-        xhr.send();
-
-        // elsewhere in code
-        init();
-
-        var slideIndex = 1;    
-
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        function showSlidesByName(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        function savePDf() {
-
-            var a = $("#userName").val();
-
-            var doc = new jsPDF();          
-            var myImage = 'data:image/png;base64,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';
-            doc.addImage(myImage, 'JPEG', 0, 10, 50, 25);
-            doc.text(10, 60, "Name Entered : " + a);
-            doc.save($("#userName").val() + '_UserStory.pdf');
-
-        }
-
-        $(document).ready(function () {
-            var $block_1_width = $(window).width();
-            var a = $('#btnSlide1Next');
-            $('#btnSlide1Next').css("left", ($block_1_width - 45) + "px");
-        });
-
-
-        $(window).resize(function () {
-            var $block_1_width = $(window).width();
-            var a = $('#btnSlide1Next');
-            $('#btnSlide1Next').css("left", ($block_1_width - 45) + "px");
-
-            //var elem = document.getElementById('btnSlide1Next');     
-            //elem.style.left = ($block_1_width - 120) + "px";
-        });
-
-
-        $("#btnStart").click(function () {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'slide1.html', true);
-            xhr.onreadystatechange = function () {
-                if (this.readyState !== 4) return;
-                if (this.status !== 200) return; // or whatever error handling you want
-                document.getElementById('slides').innerHTML = this.responseText; 
-
-                var $block_1_width = $(window).width();
-                var a = $('#btnSlide1Next');
-                $('#btnSlide1Next').css("left", ($block_1_width - 45) + "px");
-
-            };
-            xhr.send();   
-
-       
-       
-
-        });
-
-
-        $(document).on('click', '#btnSlide1Back', function () {//do something})
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'slideIntro.html', true);
-            xhr.onreadystatechange = function () {
-                if (this.readyState !== 4) return;
-                if (this.status !== 200) return; // or whatever error handling you want
-                document.getElementById('slides').innerHTML = this.responseText;
-
-
-                var inputs = document.getElementsByTagName('button');
-
-                for (var i = 0; i < inputs.length; i++) {
-                    inputs[i].addEventListener('click', masterEventHandler, false);
-                }
-
-            };
-            xhr.send();  
-     
-
-        });
-
-        $(document).on('click', '#btnSlide2', function () {//do something})
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'slide3.html', true);
-            xhr.onreadystatechange = function () {
-                if (this.readyState !== 4) return;
-                if (this.status !== 200) return; // or whatever error handling you want
-                document.getElementById('slides').innerHTML = this.responseText;
-            };
-            xhr.send();
-        });
-
-
-        $(document).on('click', '#btnSlide1Next', function () {//do something})
-            sessionStorage.setItem("name", $("#userName").val());       
-            savePDf();
-
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'end.html', true);
-            xhr.onreadystatechange = function () {
-                if (this.readyState !== 4) return;
-                if (this.status !== 200) return; // or whatever error handling you want
-                document.getElementById('slides').innerHTML = this.responseText;
-            };
-            xhr.send();
-
-        });
-
-        function masterEventHandler(e) {
-
-            switch (this.id) {
-                case "btnStart":
-
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('GET', 'slide1.html', true);
-                    xhr.onreadystatechange = function () {
-                        if (this.readyState !== 4) return;
-                        if (this.status !== 200) return; // or whatever error handling you want
-                        document.getElementById('slides').innerHTML = this.responseText;
-                    };
-                    xhr.send();   
-
-                    break;
-                case "btnStart":
-                    // code block
-                    break;
-                case "btnStart":
-                // code block
-            }
-
-
-
-        }
-     
-
-
-
-
     </script>
-   
-
-
-
-
-
 </body>
 </html>
