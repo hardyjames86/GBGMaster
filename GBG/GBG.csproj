@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\HorizontalSelector.html" />
     <Content Include="css\fullpagecssoverride.css" />
     <Content Include="css\normalize.css" />
     <Content Include="font\demo-files\demo.css" />
@@ -87,12 +88,21 @@
     <Content Include="font\Gesta4\License.txt" />
     <Content Include="font\readme.txt" />
     <Content Include="font\stylesheet.css" />
+    <Content Include="images\background.png" />
+    <Content Include="images\img_mountains_wide.jpg" />
+    <Content Include="images\img_nature_wide.jpg" />
+    <Content Include="images\img_snow_wide.jpg" />
+    <Content Include="images\intro.jpg" />
+    <Content Include="images\scroll.png" />
     <Content Include="images\start\kingdomMerchantCastleBlack.svg" />
     <Content Include="images\start\kingdomMerchantBackground.svg" />
     <Content Include="images\start\startSword.svg" />
     <Content Include="images\start\startShield.svg" />
     <Content Include="images\start\startGbgLogo.svg" />
     <Content Include="images\start\startBackground.svg" />
+    <Content Include="images\sword.jpg" />
+    <Content Include="images\sword.png" />
+    <Content Include="images\theend.png" />
     <Content Include="scripts\examples.js" />
     <Content Include="css\fullpage.css" />
     <Content Include="css\fullpage.min.css" />
